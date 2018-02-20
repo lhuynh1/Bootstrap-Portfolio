@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', 'Helvetica neue', Helvetica, sans-serif;
+    background: url('hip-square.png')    
+}
+
+header {
+    margin-bottom: 35px;
+}
+
+.navbar-default .navbar-brand {
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', Times, serif
+}
+
+
+
+.container #aboutme {
+    color: #4aaaa5;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container #connectwithme h2 {
+    color: #4aaaa5;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 65px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #666666;
+    border-top: 5px solid #4aaaa5;
+}
+
+.text-center {
+    color: white;
+    text-align: center;
+    font-size: 11px;
+}
+
+#copyright {
+    margin-top: 20px;
+}
