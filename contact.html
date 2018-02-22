@@ -2,34 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Viewport for Media Queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- Latest compiled and minified CSS -->
+
+
+<!-- Latest compiled and minified CSS; Bootstrap CDN -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>About Me</title>
+<!-- Reset style sheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<!-- Style Sheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Contact | Lisa Huynh</title>
 </head>
+
 
 <body>
 
-    <header class="navbar-default">
+    <header class="navbar navbar-default">
         <div class="container">
             <nav class="navbar-static-top">
-                  <div class="navbar-header">
-                    <a class="navbar-brand">Lisa Huynh</a>
-                  </div>
-                 <ul class="nav navbar-nav navbar-right">
-
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavPtr">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                 </div>
-              </nav>
+           
+            <div class="navbar-collapse collapse mynavbar"> 
+                
+                
+                <div class="navbar-brand">Lisa Huynh</div>
+               
+
+                 <ul class="nav navbar-nav navbar-right"> 
+                    <li><a id="navlink" href="index.html">About</a></li>
+                    <li><a id="navlink" href="portfolio.html">Portfolio</a></li>
+                    <li><a id="navlink" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
     </header>
 
 
@@ -37,7 +55,7 @@
               <!-- row1 for about me & connect with me header & panel -->
               <div class="row">
                   <!-- column 8/12 for about me header -->
-                  <div class="col-xs-12 col-md-8">
+                  <div class="col-md-8 col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
                     <div class="page-header" id="aboutme">
@@ -46,7 +64,13 @@
 
         <div class="row"> <!-- row within about me panel -->
             <!-- column 4/12 for bio image -->
-            <div class="col-sm-4">
+            <div class="col-sm-5">
+
+            <img class="img-fluid img-thumbnail pull-left" alt="profile-pic" src="assets/images/lisah.PNG">
+            </div>
+
+            <!-- column 8/12 for bio -->
+            <div class="col-md-7">
                     <form>
                             <label>Name</label><br/>
                             <input class="textbox" type="text" name="name" value="John Smith"><br/><br/>
@@ -61,15 +85,15 @@
                             <input type="submit" value="Submit">
                             </div>
                     </form>
-        </div>
-    </div>
+            </div> 
+         </div>
                </div> <!-- closing tag for panel-body -->
             </div> <!-- closing tag for panel-default -->
           </div> <!-- closing tag for col 8/12 row 1 -->
 
 
             <!-- column 4/12 for connect with me header -->
-            <div class="col-xs-12 col-md-4">
+            <div class="col-md-12 col-md-4">
                     <div class="panel panel-default">
                 <div class="panel-body">
                         <div class="page-header" id="connectwithme">
@@ -77,20 +101,20 @@
                         </div>
 
                     
-                        <div class="col-sm-3 center-block">
+                        <div class="col-xs-4">
                         <a href="https://www.linkedin.com/in/lhuynh1/" target="blank" >
                             <img class="img-fluid thumbnail" src="assets/images/linkedin.png">
                             </a>
                         </div>
 
-                        <div class="col-sm-3 center-block">    
+                        <div class="col-xs-4">    
                             <a href="https://github.com/lhuynh1" target="_blank"> 
                             <img class="img-fluid thumbnail" src="assets/images/github.png">
                             </a>
                         </div>
 
 
-                        <div class="col-sm-3 center-block">    
+                        <div class="col-xs-4">    
                             <a href="https://stackoverflow.com/users/6824517/lisa-huynh?tab=profile" target"_blank">
                             <img class="img-fluid thumbnail" src="assets/images/stackoverflow.png">
                             </a>
@@ -111,7 +135,7 @@
     <div class="row"> 
         
             <footer class="footer navbar-fixed-bottomm">
-                <div class="col-sm-12">
+                <div class="col-xs-12">
 			    <div class="container-fluid" id="copyright">
 				<p class="text-center text-muted">
                     &copy; Copyright 2018 Lisa Huynh
